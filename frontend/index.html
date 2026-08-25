@@ -202,7 +202,7 @@
         for (let p = 1; p <= 5; p++) {
             for (let g = 1; g <= 18; g++) {
                 // Find element at this position
-                const el = elements.findLast(e => e.p === p && e.g === g);
+                const el = elements.find(e => e.p === p && e.g === g);
                 const div = document.createElement('div');
                 
                 if (el) {
